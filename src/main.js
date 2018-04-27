@@ -8,7 +8,6 @@ function getFormVal(){
 }
 
 $(document).ready(function(){
-  console.log("yellow");
   $('#symptomForm').submit(function(event){
     event.preventDefault();
 

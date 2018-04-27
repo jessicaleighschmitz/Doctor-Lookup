@@ -1,10 +1,10 @@
-#Doctor Lookup using Api
+# Doctor Lookup using Api
 
-####A website that uses the BetterDoctor API in order to demonstrate the ability to parse API JSON data and use JavaScript promises.
+#### A website that uses the BetterDoctor API in order to demonstrate the ability to parse API JSON data and use JavaScript promises.
 
 #### **By, Jessica Schmitz**
 
-###Specs
+### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | Program takes in user input keyword for a medical symptom and will display list of doctors in Portland who match the search results | "eczema" | [["Taylor", "Thomas", "222 Second Ave", "(503)333-333", "www.drthomas.com", "Accepting new patients"], [["Smith", "Scott", "111 First Ave", "(503)111-1111", "www.drScott.com", "Accepting new patients"]...|
@@ -12,7 +12,7 @@
 | Program can take in a user keyword search and return an detailed error if no doctors match the search criteria | "clown" | "There are no doctors who matched that search criteria, please enter in a different keyword" |
 
 
-##Setup/Installation Requirements
+## Setup/Installation Requirements
 
 1. Clone this repository using Git/Bash in your computer terminal.
 2. Using the terminal, navigate to the project's root directory.
@@ -21,17 +21,17 @@
 5. Create a .env file in the project and place your personal API key in a variable there.
 6. Enter npm run start into the terminal to load the server.
 
-##Known Bugs
- *No known bugs.*
+## Known Bugs
+ * No known bugs.
 
-##Technologies Used
- *JavaScript
- *Jquery
- *Webpack
- *Jasmine
- *Karma
- *ESLint
- *Ajax*
+## Technologies Used
+ * JavaScript
+ * Jquery
+ * Webpack
+ * Jasmine
+ * Karma
+ * ESLint
+ * Ajax*
 
 ## Contact Details
 
