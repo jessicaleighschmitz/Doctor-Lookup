@@ -10,12 +10,14 @@ $(document).ready(function(){
     let api = new Api();
     let query = $('#symptomForm').val();
     let promise = api.makeApiCall();
-    console.log(query);
+
+
 
     promise.then(function(response){
       let body = JSON.parse(response)
+
       console.log("yeeet", response);
-      $('#output').html("yee");
+      $('#output').html(`<li>${body.data[0].practices[0].phones.number}</li>`);
     });
   });
 });
