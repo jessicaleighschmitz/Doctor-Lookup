@@ -14,16 +14,18 @@ $(document).ready(function(){
 
     promise.then(function(response){
       let body = JSON.parse(response);
-      function getResults(response) {
-        let first_name = body.data[0].profile.first_name;
-        let last_name = body.data[0].profile.last_name;
-        let address = body.data[0].visit_address.street + ", " + body.data[0].visit_address.city + ", " + body.data[0].visit_address.state + ", " + body.data[0].visit_address.zip;
-        let website = body.data[0].practices[0].website;
-        let phone = body.data[0].practices[0].phones[0].number;
-        let newPatients = "Accepts new patients: " + body.data[0].accepts_new_patients;
+      let arrayLimit = body.meta.limit;
+      for(let i = 0; i < arrayLimit; i++) {
+        let first_name = body.data[i].profile.first_name;
+        let last_name = body.data[i].profile.last_name;
+        let address = body.data[i].practices[0].visit_address.street + ", " + body.data[i].practices[0].visit_address.city + ", " + body.data[i].practices[0].visit_address.state + ", " + body.data[i].practices[0].visit_address.zip;
+        let website = body.data[i].practices[0].website;
+        let phone = body.data[i].practices[0].phones[0].number;
+        let newPatients = "Accepts new patients: " + body.data[i].accepts_new_patients;
+        console.log("yeeet", first_name, last_name, address, website, phone, newPatients);
       }
 
-      console.log("yeeet", body);
+
 
     });
   });
