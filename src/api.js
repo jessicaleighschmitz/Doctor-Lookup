@@ -6,12 +6,12 @@ class Api {
   makeApiCall(){
     return new Promise(function(resolve, reject){
       let request = new XMLHttpRequest();
-      let url = ``
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${eczema}&location=or-portland&skip=0&limit=5&user_key=${process.env.exports.apiKey}`
       request.onload = function() {
         if(this.status === 200) {
           resolve(request.response);
         } else {
-          rejesct(Error(request.statusText));
+          reject(Error(request.statusText));
         }
       }
       request.open("GET", url, true);
@@ -19,3 +19,4 @@ class Api {
     });
   }
 }
+export {Api};

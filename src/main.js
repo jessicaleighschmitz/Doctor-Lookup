@@ -7,8 +7,11 @@ $(document).ready(function(){
   $('div').submit(function(event){
     event.preventDefault();
 
+let query = $('#symptomForm').val();
+
 promise.then(function(response){
   let body = JSON.parse(repsonse)
+  $('#output').html()
 })
 
 
