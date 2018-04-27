@@ -3,4 +3,28 @@
 }
 body {
   background-color: #7FDBFF;
+  font-family: 'Gothic A1', sans-serif;
+}
+h1 {
+  font-weight: bold;
+  margin: 30px 20px;
+}
+#symptomForm {
+  margin: 5px 20px;
+}
+button#symptomButton {
+  min-height: 15px;
+}
+#output {
+  border-top: 2px solid #000;
+  max-width: 500px;
+  margin: 30px 20px;
+}
+.info {
+  background-color: #EEEAC9;
+  margin: 15px;
+  padding: 5px;
+}
+#intro, #emergency {
+  margin-left: 20px;
 }

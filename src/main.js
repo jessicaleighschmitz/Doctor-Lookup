@@ -34,7 +34,7 @@ $(document).ready(function(){
           let phone = body.data[i].practices[0].phones[0].number;
           let newPatients = "Accepts new patients: " + body.data[i].practices[0].accepts_new_patients;
 
-          $("#output").append(`<p>Dr: ${first_name} ${last_name}<br>
+          $("#output").append(`<p class="info">Dr: ${first_name} ${last_name}<br>
           Address: ${address}<br>
           Website: ${website}<br>
           Phone Number: ${phone}<br>

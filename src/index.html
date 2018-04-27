@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -14,14 +15,20 @@
       <h1>Doctor Lookup</h1>
     </div>
     <div id="search">
+      <p id="intro">
+        In need of a doctor? Use the search box below to find the contact details of a doctor near you.
+      </p>
       <form id="symptomForm">
         <label for="symptomSearch">Search by symptom or doctor name:</label>
         <input id="symptomSearch" type="text" />
         <button type="submit" id="symptomButton">Submit</button>
       </form>
+      <p id="emergency">
+        <em>*If you are experiencing a medical emergency, call 911 immediately.</em>
+      </p>
     </div>
     <div id="output">
-      <h2>Doctor Info</h2>
+      <h2>Doctor Information</h2>
 
     </div>
   </body>
