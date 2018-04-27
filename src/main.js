@@ -4,21 +4,18 @@ import $ from 'jquery';
 import './styles.css';
 
 $(document).ready(function(){
-  $('div').submit(function(event){
+  console.log("yellow");
+  $('#symptomForm').submit(function(event){
     event.preventDefault();
+    let api = new Api();
+    let query = $('#symptomForm').val();
+    let promise = api.makeApiCall();
+    console.log(query);
 
-let query = $('#symptomForm').val();
-
-promise.then(function(response){
-  let body = JSON.parse(repsonse)
-  $('#output').html()
-})
-
-
-
-
-
-
-
-  })
-})
+    promise.then(function(response){
+      let body = JSON.parse(response)
+      console.log("yeeet", response);
+      $('#output').html("yee");
+    });
+  });
+});
