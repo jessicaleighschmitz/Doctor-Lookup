@@ -10,11 +10,10 @@ function getFormVal(){
 $(document).ready(function(){
   $('#symptomForm').submit(function(event){
     event.preventDefault();
-
+      $("#output").empty();
     let api = new Api();
     let promise = api.makeApiCall();
     promise.then(function(response){
-
       let body = JSON.parse(response);
       if(body.meta.total === 0){
         $('#output').html("No doctors currently match your search criteria, please try another keyword.");
@@ -32,7 +31,7 @@ $(document).ready(function(){
           }
           let phone = body.data[i].practices[0].phones[0].number;
           let newPatients = "Accepts new patients: " + body.data[i].practices[0].accepts_new_patients;
-
+          
           $("#output").append(`<p class="info">Dr: ${first_name} ${last_name}<br>
           Address: ${address}<br>
           Website: ${website}<br>
