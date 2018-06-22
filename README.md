@@ -4,6 +4,8 @@
 
 #### **By, Jessica Schmitz**
 
+![application screenshot](src/images/doctorfinder.png)
+
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
