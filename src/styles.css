@@ -1,13 +1,35 @@
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 body {
-  background-color: #7FDBFF;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'PT Serif', serif;
+}
+#header{
+  text-align: center;
+  background-color: #A6C1F6;
+  margin-top: 0;
+}
+#header p{
+  font-size: 1.3rem;
 }
 h1 {
   font-weight: bold;
-  margin: 30px 20px;
+  padding: 40px 0;
+  color: #06389C;
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+}
+#search{
+  background-color: #CECFD1;
+}
+p, p#intro, label{
+  padding: 20px;
+}
+h2{
+  color: #06389C;
+  padding: 40px;
+  font-size: 2.5rem;
 }
 #symptomForm {
   margin: 5px 20px;
@@ -27,4 +49,7 @@ button#symptomButton {
 }
 #intro, #emergency {
   margin-left: 20px;
+}
+p #emergency{
+  font-weight: bold;
 }
