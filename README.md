@@ -4,7 +4,11 @@
 
 #### **By, Jessica Schmitz**
 
-![application screenshot](src/images/doctor-finder.png)
+| Image of the application |
+| ------------------------ |
+| ![application screenshot](src/images/doctor-finder.png) |
+
+See it live at: https://jessicaleighschmitz.github.io/Doctor-Lookup
 
 ### Specs
 | Spec | Input | Output |
