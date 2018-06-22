@@ -4,7 +4,7 @@
 
 #### **By, Jessica Schmitz**
 
-![application screenshot](src/images/doctorfinder.png)
+![application screenshot](src/images/doctor-finder.png)
 
 ### Specs
 | Spec | Input | Output |
